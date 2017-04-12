@@ -43,6 +43,7 @@ h6, .h6 {
 
 .blog-masthead {
   background-color: #428bca;
+  margin-bottom: 5%;
   -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
           box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
 }
@@ -60,6 +61,17 @@ h6, .h6 {
 .blog-nav-item:focus {
   color: #fff;
   text-decoration: none;
+}
+
+.blog-nav li {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 500;
+font-size: 20px;	
+}
+.blog-nav li a {
+    color: #fff;
 }
 
 /* Active state gets a caret at the bottom */
@@ -92,13 +104,23 @@ h6, .h6 {
 
 
 /*
- * Main column and sidebar layout
+ * Main column and sidebar layout and split code
  */
 
 .blog-main {
   font-size: 18px;
   line-height: 1.5;
 }
+
+.half {
+	width: 50%;
+	float: left;
+}
+
+.split-row {
+	clear: both;
+}
+
 
 /* Sidebar modules for boxing content */
 .sidebar-module {
@@ -141,6 +163,12 @@ h6, .h6 {
   margin-bottom: 5px;
   font-size: 40px;
 }
+
+.blog-main-title {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
 .blog-post-meta {
   margin-bottom: 20px;
   color: #999;
